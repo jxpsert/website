@@ -1,0 +1,81 @@
+@font-face {
+    src: url("./fonts/JetBrainsMono-Regular.ttf");
+    font-family: "JetBrains Mono Regular"
+}
+@font-face {
+    src: url("./fonts/JetBrainsMono-Bold.ttf");
+    font-family: "JetBrains Mono Bold"
+}
+@font-face {
+    src: url("./fonts/JetBrainsMono-Italic.ttf");
+    font-family: "JetBrains Mono Italic"
+}
+body {
+    background-color: #ffffff;
+}
+.namething {
+    width: 100%;
+    height: 125px;
+    background-color: #bbbbbb;
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+
+    margin-top: 175px;
+}
+.navbar {
+    width: 100%;
+    height: 25px;
+    background-color: #bbbbbb;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    border: none;
+    color: #1c1c1c;
+}
+.topcontainer {
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/hdr/hdr1.png");
+    height: 350px;
+    position: relative;
+}
+.name {
+    color: #1c1c1c;
+    font-family: "JetBrains Mono Bold";
+    font-size: 50px;
+    position: relative;
+}
+.navbutton {
+    font-family: "JetBrains Mono Regular";
+    font-size: 15px;
+    transition: 250ms;
+    color: #1c1c1c;
+}
+.navbutton:hover {
+    text-decoration: none;
+    color: #303030;
+    font-size: 20px;
+}
+.darkbutton:hover {
+    cursor: pointer;
+}
+.maindiv {
+    padding: 50px;
+}
+h1,h2,h3,h4.h5,h6 {
+    font-family: "JetBrains Mono Bold";
+    color: #1c1c1c;
+}
+p,a {
+    font-family: "JetBrains Mono Regular";
+    color: #1c1c1c;
+    font-size: 18px;
+}

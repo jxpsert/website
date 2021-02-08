@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <link href="style/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link  id="stylesheet" href="style/main.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Jasper</title>
+</head>
+<body>
+<div class="container-fluid topcontainer">
+<div><img class="darkbutton" onclick="toggleDark()" src="img/buttondark.png" width="50px" style="display: block;padding:10px;"></div>
+<div class="namething">
+    <h1 class="name">JASPER</h1>
+    <div class="navbar">
+        <p><a class="navbutton" target="_blank" href="https://github.com/jxpsert">GitHub</a> - <a class="navbutton" target="_blank" href="https://twitter.com/japsert2">Twitter</a> - <a class="navbutton" target="_blank" href=" ">CV</a></p>
+    </div>
+</div>
+
+</div>
+<div class="container maindiv">
+    <h1>Hi there.</h1><br>
+    <p>Consequat labore nostrud esse aliquip eu cillum eu elit anim Lorem sit aliquip ea. Exercitation veniam Lorem mollit commodo sit ad eiusmod proident. Laborum aliquip ad in eiusmod exercitation. Culpa et in incididunt eu exercitation in id laboris reprehenderit in. Excepteur pariatur mollit deserunt ipsum sint. Mollit ad excepteur et pariatur nostrud quis laboris exercitation eu Lorem cillum aute.
+
+Minim eu exercitation qui nulla ad ullamco ipsum minim aliquip consectetur. Ex laborum proident voluptate do amet. Sit laborum Lorem ea quis ut. Reprehenderit magna nulla adipisicing culpa ullamco tempor laboris laborum.
+
+Adipisicing deserunt mollit elit sint eiusmod commodo ex occaecat. In duis Lorem dolore adipisicing irure. Voluptate id velit id minim sint reprehenderit velit magna esse commodo dolore minim tempor do. Nostrud fugiat consequat Lorem culpa enim. Dolor velit eiusmod sint aliquip ea excepteur. Nisi labore velit in minim minim nostrud tempor culpa laborum veniam.
+
+Ut laborum labore sit quis consectetur velit ipsum pariatur et nostrud. Consequat ea tempor do consequat enim aliqua sit ea. Amet aliqua aliqua proident aliquip occaecat eu irure do pariatur consequat. Elit nisi proident non ad deserunt excepteur laborum. Est mollit enim excepteur minim occaecat dolore aliqua. Ipsum excepteur eiusmod deserunt proident ad. Eu incididunt pariatur commodo veniam aliquip.
+
+Ipsum do nulla non aute in duis incididunt ullamco culpa voluptate exercitation aute irure. Qui ullamco irure amet deserunt labore labore adipisicing. Eiusmod labore eu ut quis eiusmod occaecat excepteur officia officia ad irure excepteur.
+
+Officia veniam dolor amet culpa culpa Lorem occaecat ea ullamco fugiat. Occaecat qui sit ea exercitation voluptate aliqua dolor ea amet laboris deserunt. Labore reprehenderit duis sit reprehenderit. Excepteur aute eiusmod et officia. Ex pariatur laboris nostrud cillum sunt nulla laborum amet. Minim amet ut consequat fugiat occaecat aliqua aliquip nulla aliqua.
+
+Eu dolor reprehenderit esse occaecat aute elit id. Dolore commodo aliquip id nostrud ex. Aliquip do ea cillum ipsum eu commodo tempor. Commodo dolore veniam in aliquip in esse consequat non eiusmod magna esse excepteur laboris laboris. Irure minim nostrud ad ut est voluptate labore dolore.</p>
+</div>
+</body>
+<script type="text/javascript">
+        if(localStorage.getItem('colour') == 'dark'){ // Load colour selection from local storage
+            DarkMode();
+        }else{
+            LightMode();
+        }
+        function toggleDark() { // When the light in the top left is clicked
+            if(localStorage.getItem('colour') == 'dark'){
+                LightMode();
+            }else{
+                DarkMode();
+            }
+        }
+        function DarkMode() { // Apply dark CSS
+            console.log("Selected dark mode");
+            document.getElementById("stylesheet").href = "style/main.css";
+            localStorage.setItem("colour", "dark");
+        }
+        function LightMode() { // Apply light CSS
+            console.log("Selected light mode");
+            document.getElementById("stylesheet").href = "style/light.css";
+            localStorage.setItem("colour", "light");
+        }
+</script>
+</html>
