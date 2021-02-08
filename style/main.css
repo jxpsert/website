@@ -50,6 +50,7 @@ body {
     font-family: "JetBrains Mono Bold";
     font-size: 50px;
     position: relative;
+    color: #aaa;
 }
 .navbutton {
     font-family: "JetBrains Mono Regular";
@@ -70,8 +71,12 @@ body {
 .maindiv {
     padding: 50px;
 }
-h1,h2,h3,h4.h5,h6 {
+h1,h2,h3,h4,h5,h6 {
     font-family: "JetBrains Mono Bold";
+    color: #aaa;
+}
+h1:hover,h2:hover,h3:hover,h4:hover,h5:hover,h6:hover {
+    text-decoration-color: #aaa;
 }
 p,a {
     font-family: "JetBrains Mono Regular";
