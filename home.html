@@ -5,14 +5,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
     <link href="style/bootstrap.min.css" rel="stylesheet">
+    <link href="img/favicon.png" rel="icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Jasper's website">
+    <meta name="keywords" content="jaspert, japsert, jxspert, jxpr, jasperp">
     <link  id="stylesheet" href="style/main.css" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Jasper</title>
 </head>
 <body>
 <div class="container-fluid topcontainer">
-<div><img class="darkbutton" onclick="toggleDark()" src="img/buttondark.png" width="50px" style="display: block;padding:10px;"></div>
+<div id="colourmodebtn"><img class="darkbutton" onclick="toggleDark()" src="img/buttondark.png" width="50px" style="display: block;padding:10px;"></div>
 <div class="namething">
     <h1 class="name">JASPER</h1>
     <div class="navbar">
@@ -32,7 +35,8 @@
     <a href="#projects" data-bs-toggle="collapse"><h3>Projects</h3></a><div id="projects" class="collapse show">
         <p>I've made multiple projects using my skills, both in school assignments and personal use.
             <br>Here's some of my top ones.</p>
-        <a href="#kristalbank" data-bs-toggle="collapse"><h5>Kristalbank</h5></a>
+        <a href="#kristalbank" data-bs-toggle="collapse"><h5>&bull; Kristalbank</h5></a>
+        <p class="languages">JavaScript, HTML, CSS, PHP</p>
         <p>Kristalbank was one of my personal projects. Yes, it was made for my school, but it wasn't an assignment. The plan was to actually deploy this in my school, however, I couldn't find the time.</p>
         <div id="kristalbank" class="collapse">
             <p>As the name suggests, Kristalbank is a bank. The name is derived from my school's name. In this bank, people don't have euros, dollars, pounds or whatever - they have crystals.
@@ -40,9 +44,21 @@
             <br>The plan was ambitious, and I didn't realise at the time how huge the costs of this would be. The project remains on my server, as a reminder of bad ideas.</p>
             <img src="img/kristalbank.jpeg" width="75%">
         </div>
+        <a href="#boeken" data-bs-toggle="collapse"><h5>&bull; BoekSelector</h5></a>
+        <p class="languages">JavaScript, HTML</p>
+        <p>This, I actually use on a daily basis.</p>
+        <div id="boeken" class="collapse">
+            <p>BoekSelector shows me what books I should pack for the day, based on a daily schedule. The schedule is consistent every week, so it requires no outside connection.
+            <br>It gets the difference between 2 arrays - classes today, and classes the day before. It then says which books should be taken out, and which should go in, along with a simple overview of today's classes.
+            <br>I made this in one morning using JavaScript.</p>
+            <img src="img/boekselector.jpeg" width="75%">
+        </div>
         </div>
 </div>
 </body>
+<footer class="footer">
+    &copy; 2021 Jasper P
+</footer>
 <script type="text/javascript">
         if(localStorage.getItem('colour') == 'dark'){ // Load colour selection from local storage
             DarkMode();

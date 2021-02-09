@@ -10,6 +10,9 @@
     src: url("./fonts/JetBrainsMono-Italic.ttf");
     font-family: "JetBrains Mono Italic"
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: #ffffff;
 }
@@ -25,7 +28,7 @@ body {
     align-content: center;
     flex-direction: column;
 
-    margin-top: 175px;
+    margin-top: 250px;
 }
 .navbar {
     width: 100%;
@@ -61,7 +64,7 @@ body {
 }
 .navbutton:hover {
     text-decoration: none;
-    color: #303030;
+    color: #800000;
     font-size: 20px;
 }
 .darkbutton:hover {
@@ -73,9 +76,41 @@ body {
 h1,h2,h3,h4,h5,h6 {
     font-family: "JetBrains Mono Bold";
     color: #1c1c1c;
+    transition: 250ms;
 }
 p,a {
     font-family: "JetBrains Mono Regular";
     color: #1c1c1c;
     font-size: 18px;
+}
+a:hover {
+    color: #800000;
+}
+a h3:hover, a h4:hover, a h5:hover {
+    color: #800000;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    height: 60px;
+    display: block;
+    line-height: 60px;
+    text-align: right;
+    padding-right: 2%;
+    color: #dddddd;
+}
+#colourmodebtn {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+.languages {
+    color: #686868;
+    font-size: 15px;
 }
