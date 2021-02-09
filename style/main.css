@@ -46,6 +46,9 @@ body {
     margin: 0;
     padding: 0;
     background-image: url("../img/hdr/hdr1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 350px;
     position: relative;
 }
