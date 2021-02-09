@@ -15,6 +15,7 @@
 </head>
 <body>
 <div class="container-fluid topcontainer">
+    <!-- The header image is supplied by Pixabay. View license agreement here: https://pixabay.com/service/license/ -->
 <div id="colourmodebtn"><img class="darkbutton" onclick="toggleDark()" src="img/buttondark.png" width="50px" style="display: block;padding:10px;"></div>
 <div class="namething">
     <h1 class="name">JASPER</h1>
@@ -58,6 +59,7 @@
     &copy; 2021 Jasper P
 </footer>
 <script type="text/javascript">
+        // This is everything relating to the colour modes (light/dark)
         if(localStorage.getItem('colour') == 'dark'){ // Load colour selection from local storage
             DarkMode();
         }else{
@@ -80,5 +82,6 @@
             document.getElementById("stylesheet").href = "style/light.css";
             localStorage.setItem("colour", "light");
         }
+        // This is the end of the colour modes
 </script>
 </html>
