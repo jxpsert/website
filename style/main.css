@@ -82,8 +82,12 @@ h1,h2,h3,h4,h5,h6 {
     color: #aaa;
     transition: 250ms;
 }
-p,a {
+p {
     font-family: "JetBrains Mono Regular";
+    font-size: 18px;
+}
+a {
+    font-family: "JetBrains Mono Italic";
     font-size: 18px;
 }
 a:hover {

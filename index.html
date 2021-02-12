@@ -51,6 +51,12 @@
             <br>It gets the difference between 2 arrays - classes today, and classes the day before. It then says which books should be taken out, and which should go in, along with a simple overview of today's classes.
             <br>I made this in one morning using JavaScript.</p>
             <img src="img/boekselector.jpeg" width="75%">
+            <br><br>
+        <h5>&bull; This website</h5>
+        <p class="languages">JavaScript, HTML, CSS</p>
+            <p>This site, thus far, has taken about <span id="websitedays"></span> days.
+                <br>If you want to see live updates, follow the <a target="_blank" href="https://github.com/jxpsert/website">GitHub repository</a>.
+            </p>
         <hr>
         <h3>Contact</h3>
         <p>If, for whatever reason, you'd like to contact me, please do so either via Twitter or GitHub.</p>
@@ -59,6 +65,16 @@
 <footer class="footer">
     &copy; 2021 Jasper P
 </footer>
+
+<script type="text/javascript">
+let field = document.getElementById('websitedays');
+let startdate = new Date('2021-02-09');
+let now = new Date();
+
+let days = Math.round((now - startdate)/(1000*60*60*24));
+field.innerHTML = days;
+</script>
+
 <script type="text/javascript">
 if(localStorage.getItem('colour') == 'dark'){ // Load colour selection from local storage
     DarkMode();
