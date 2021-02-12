@@ -10,6 +10,7 @@
     <meta name="description" content="Jasper's website">
     <meta name="keywords" content="jaspert, japsert, jxspert, jxpr, jasperp">
     <link  id="stylesheet" href="style/main.css" rel="stylesheet">
+    <!-- JetBrains Mono font used, licensed under a SIL Open Font License (https://scripts.sil.org/OFL) -->
     <meta charset="UTF-8">
     <title>Jasper</title>
 </head>
@@ -58,30 +59,5 @@
 <footer class="footer">
     &copy; 2021 Jasper P
 </footer>
-<script type="text/javascript">
-        // This is everything relating to the colour modes (light/dark)
-        if(localStorage.getItem('colour') == 'dark'){ // Load colour selection from local storage
-            DarkMode();
-        }else{
-            LightMode();
-        }
-        function toggleDark() { // When the light in the top left is clicked
-            if(localStorage.getItem('colour') == 'dark'){
-                LightMode();
-            }else{
-                DarkMode();
-            }
-        }
-        function DarkMode() { // Apply dark CSS
-            console.log("Selected dark mode");
-            document.getElementById("stylesheet").href = "style/main.css";
-            localStorage.setItem("colour", "dark");
-        }
-        function LightMode() { // Apply light CSS
-            console.log("Selected light mode");
-            document.getElementById("stylesheet").href = "style/light.css";
-            localStorage.setItem("colour", "light");
-        }
-        // This is the end of the colour modes
-</script>
+<script type="text/javascript" src="js/colours.js"></script>
 </html>
